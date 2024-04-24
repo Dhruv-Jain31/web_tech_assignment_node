@@ -1,0 +1,139 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Added color transition */
+  }
+  
+  nav ul li a:hover {
+    background-color: #e2b648;
+    color: #fff; /* Changed text color on hover for better contrast */
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Services styles */
+  .services {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Added gap between services for spacing */
+  }
+  
+  .service {
+    margin-bottom: 30px;
+    flex: 1 0 300px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Service image styles using relative paths */
+  .service::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Specific styles for each service section */
+  .service.interior-design::before {
+    background-image: url('/images/interior_design_img.jpg'); /* Assuming images are in a subfolder named "images" */
+  }
+  
+  .service.space-planning::before {
+    background-image: url('/images/space-planning.jpg');
+  }
+  
+  .service.color-consultation::before {
+    background-image: url('/images/color-consultation.jpg');
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Add some space above the footer */
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #e2b648;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; /* Smooth transition for link color */
+  }
+  
+  footer a:hover {
+    color: #fff; /* Change link color on hover */
+  }
+  
